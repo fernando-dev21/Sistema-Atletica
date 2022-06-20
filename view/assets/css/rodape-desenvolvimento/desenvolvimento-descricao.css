@@ -1,0 +1,12 @@
+.desenvolvimento__descricao {
+    font-size: 1em;
+    padding-top: 1em;
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 550px) {
+    .desenvolvimento__descricao {
+        font-size: .7em;
+    }
+}

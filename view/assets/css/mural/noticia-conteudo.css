@@ -1,0 +1,16 @@
+.noticia__conteudo {
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 100%;
+}
+
+@media screen and (max-width: 550px){
+    .noticia__conteudo {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 1.3em;
+        padding-top: .5em;
+    }
+}

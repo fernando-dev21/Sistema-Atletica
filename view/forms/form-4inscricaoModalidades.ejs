@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados-->
+        <%- include('../partials/head-meta'); %>
+        <!--CSS: Fixos-->
+        <%- include('../partials/head-links'); %>
+        <!--CSS: inscrição em modalidades-->         
+        <link rel="stylesheet" href="assets\css\formularios\inscricao-modalidades.css">
+        <!--JS: Scripts (head)-->
+        <%- include('../partials/head-js'); %>
+        <!--Titulo da Página-->
+        <title>Inscreva-se</title>
+    </head>
+    <body>
+        <!--Header-->
+        <%- include('../partials/header'); %>
+        <main id="conteudo">
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+            <div class="container">
+                <section class="descricao">
+                    <h1 class="descricao__titulo">Inscrição: Modalidades</h1>
+                    <p class="descricao__texto">Venha fazer parte dos times da Atlética</p>
+                </section>
+                <div class="incricao__caixa">
+                    <form class="inscricao__form" method="POST" action="salvarModalidade" >
+                        <div class="inscricao__caixa">
+                            <div class="inscricao__select">
+                                <label for="aluno">Digite seu nome</label>
+                                <input type="text" name="aluno">    
+                                <label for="modalidade">Escolha sua modalidade esportiva</label>
+                                <select name="nome">
+                                    <option value="Futsal">Futsal</option>
+                                    <option value="Basquete">Basquete</option>
+                                    <option value="Voleibol">Voleibol</option>  
+                                    <option value="Voleibol">Xadrez</option>        
+                                </select>
+                                <label for="tipo">Tipo</label>
+                                <select name="tipo" id="">
+                                    <option value="Individual">Individual</option>
+                                    <option value="Coletivo">Coletivo</option>   
+                                </select>
+                                <label for="genero">Gênero</label>
+                                <select name="genero" id="">
+                                    <option value="Masculino">Maculino</option>
+                                    <option value="Feminino">Feminino</option>  
+                                    <option value="Masculino">Misto</option>     
+                                </select>
+                                <label for="horario">Escolha o dia do treino</label>
+                                <select name="dia_da_semana">
+                                    <option value="Terça-feira">Terça-feira</option>
+                                    <option value="Quarta-feira">Quarta-feira</option>
+                                    <option value="Quinta-feira">Quinta-feira</option>   
+                                </select>
+                                <label for="horario">Escolha o horário do Treino</label>
+                                <select name="horario">
+                                    <option value="10:00 as 12:00 horas">10:00 as 12:00 horas</option>
+                                    <option value="14:00 as 16:00 horas">14:00 as 16:00 horas</option>
+                                    <option value="16:00 as 18:00 horas">16:00 as 18:00 horas</option>   
+                                </select>
+                                <label for="equipamento">Equipamento necessário para os treinos</label>
+                                <input type="text" name="equipamento" id="" value="Sem recomendação">
+                            </div>
+                            <div class="inscricao__img">
+                                <img src="assets\img\modalidades\futsal.png" alt="" class="inscricao img">
+                            </div>
+                        </div>
+                        <div class="form__botoes"><br>
+                            <input class="botao__cadastrar" type="submit" value= "Cadastrar" >
+                            <input class="botao__contato" type="button" value= "Entrar em Contato" >
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <!--Footer-->
+        <%- include('../partials/footer'); %>
+        <!--JS: Scripts (body)-->
+        <%- include('../partials/body-js'); %>
+    </body>
+</html>

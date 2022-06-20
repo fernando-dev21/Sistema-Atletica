@@ -1,0 +1,52 @@
+.banner__imagem {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 320px;
+    width: 100%;
+}
+
+.indexImagem {
+    background-image: url("../../img/banner/banner_quemsomos3.jpg");
+}
+
+.quemSomosImagem {
+    background-image: url("../../img/banner/banner_quemsomos3.jpg"); 
+}
+
+.modalidadesImagem {
+    background-image: url("../../img/banner/basquete_partida.jpg");
+}
+
+.campeonatosImagem {
+    background-image: url("../../img/banner/campeonatos_mural.png");
+}
+
+.lojaImagem {
+    background-image: url("../../img/banner/Design\ sem\ nome.jpg");
+    background-repeat: unset;
+    background-size: 1490px;
+}
+
+.eventosImagem {
+    background-image: url("../../img/banner/eventos_baner_atletica.png");
+    background-repeat: unset;
+    background-position: unset;
+    background-size: 500px;
+    opacity: 0.6;
+}
+
+.contatoImagem {
+    background-image: url("../../img/banner/banner_quemsomos3.jpg");
+}
+
+
+@media screen and (max-width: 550px) {
+    .banner__imagem {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 250px;
+        width: 100%;
+    }
+}

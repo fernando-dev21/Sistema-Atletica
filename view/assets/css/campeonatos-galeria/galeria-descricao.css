@@ -1,0 +1,17 @@
+.galeria__descricao {
+    border: 2px dashed var(--fundo-quadro);
+    height: 140px;
+    margin-left: 6%;
+    text-align:left;
+    width: 400px;
+    padding: 0 1em;
+}
+
+@media screen and (max-width: 765px) {
+    .galeria__descricao {
+        margin: 0;
+        
+        width: 90%;
+        height: auto;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados-->
+        <%- include('../partials/head-meta'); %>
+        <!--CSS: Fixos-->
+        <%- include('../partials/head-links'); %>
+        <!--CSS: incrição em eventos-->
+        <link rel="stylesheet" href="assets\css\formularios\evento-incricao.css">
+        <!--JS: Scripts (head)-->
+        <%- include('../partials/head-js'); %>
+        <!--Titulo da Página-->
+        <title>Eventos</title>
+    </head>
+    <body>
+        <!--Header-->
+        <%- include('../partials/header'); %>
+        <main id="conteudo">
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+                <div class="container">
+                    <section class="evento-inscricao">       
+                        <form  class="evento__form" method="POST" action="eventos-salvar">
+                            <h2 class="form__titulo">Eae, bora pro rolê?</h2>
+                            <h1 class="form__titulo">Inscreva-se nos EVENTOS</h1>
+                            <h2 class="form__titulo">organizados pela Atlética!</h2>
+                            
+                            <div class="form__campos">
+                                <label for="nome">Evento</label>
+                                <select name="nome">
+                                        <% eventos.forEach(function(evento){ %>
+                                            <option value=" <%= evento.nome %> "> <%= evento.nome %> </option>    
+                                        <% }) %>
+                                </select>
+                                <label for="cpf">CPF</label>
+                                <input type="text" name="cpf" value=" <%= usuarioLogado.cpf %> " disabled>
+                                <input name="id" type="hidden" value=" <%= usuarioLogado.id %> ">
+                                <label for="data">Data</label>
+                                <select name="data">
+                                    <option value="2022-10-10">10/10/2022</option>
+                                    <option value="2022-11-11">11/11/2022</option>
+                                    <option value="2022-11-11">12/12/2022</option>         
+                                </select>
+                                <label for="horario">Horário</label>
+                                <select name="horario">
+                                    <option value="12:00 horas">12:00 horas</option>
+                                </select>  
+                                <label for="local">Local</label>
+                                <select name="local">
+                                    <option value="Rua Aguia de Haia n 1000, Itaquera">Rua Aguia de Haia n 1000, Itaquera</option>
+                                </select>
+                            </div>
+                            <div class="form__botoes"><br>
+                                <input class="form__botoes-comprar" type="submit" value= "EFETUAR INSCRICÃO" >
+                            </div>
+                        </section>
+                    </form>
+                    <section class="evento">
+                        <div class="evento__data">
+                            <p>10-05-22</p>
+                        </div>
+                        <div class="evento__banner">
+                            <img src="assets\img\eventos\divulgacao_corrida.jpg" alt="Imagem de divulgação XXXXXXX">
+                        </div>
+                        <div class="evento__titulo">
+                            <p class="evento__titulo-p">FATEC RUN</p>
+                        </div>
+                    </section>
+                </div>
+        </main>
+        <!--Footer-->
+        <%- include('../partials/footer'); %>
+        <!--JS: Scripts (body)-->
+        <%- include('../partials/body-js'); %>
+    </body>
+</html>

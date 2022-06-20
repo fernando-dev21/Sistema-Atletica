@@ -1,0 +1,51 @@
+<header class="cabecalho">
+    <section class="acessibilidade">
+        <ul class="acessibilidade__atalhos">
+            <li><a href="#conteudo" accesskey="1" title="Ir diretamente para o conteúdo">Ir para o conteúdo [1]</a></li>
+            <li><a href="#menu" accesskey="2" title="Ir diretamente para o menu">Ir para o menu [2]</a></li>
+            <li><a href="#rodape" accesskey="3" title="Ir diretamente para o rodapé">Ir para o rodapé [3]</a></li>
+        </ul>
+        <ul class="acessibilidade__links">
+            <li><a href="acessibilidade" title="Ir para a página de Acessibilidade">ACESSIBILIDADE</a></li>
+            <li class="contraste"><a href="javascript:void(0);" id="contraste">CONTRASTE PRETO</a></li>
+            <li class="contraste"><a href="javascript:void(0);" id="sem_contraste">SEM CONTRASTE</a></li>
+            <li class="fonte"><a href="javascript:void(0);" id="aumentar">A+</a></li>
+            <li class="fonte"><a href="javascript:void(0);" id="diminuir">A-</a></li>
+        </ul>
+    </section>
+    <section class="menu-superior">
+        <a href="index.html"><img class="logo-atletica" src="./assets/img/menu-superior/logo_atletica.png" alt="Imagem do logo da Atlética da Fatec Zona Leste com um escudo nas cores vermelha e amarela e uma coruja branca"></a>
+        <nav class="menu" id="#menu">
+            <label for="menu__botao"><img class="menu__dropdown" data-menuImagem src="./assets/img/menu-superior/menu_white.ico" alt="Imagem do botão de menu contendo três faixas brancas"></label>
+            <input type="checkbox" class="menu__botao" id="menu__botao" data-menuBotao onclick="MudaImg()">
+            <ul class="menu__links">
+                <li><a href="index">INÍCIO</a></li>
+                <li><a href="quemsomos">QUEM SOMOS</a></li>
+                <li><a href="modalidades">MODALIDADES</a></li>
+                <li><a href="campeonatos">CAMPEONATOS</a></li>
+                <li><a href="eventos">EVENTOS</a></li>
+                <li><a href="loja_virtual">LOJA VIRTUAL</a></li>
+                <li><a href="contato">CONTATO</a></li>
+                <li class="menu_colapsado">
+                    <a href="#">PARTICIPE</a>
+                    <ul>
+                        <li><a href="login">Entrar/Cadastre-se</a></li>
+                        <li><a href="usuario">Minha Página</a></li>
+                        <li><a href="usuario">Meus eventos</a></li>
+                        <li><a href="usuario">Meus treinos</a></li>
+                        <li><a href="#">Filie-se a Atlética</a></li>
+                        <li><a href="eventos-inscricao">Inscreva-se nos eventos</a></li>
+                        <li><a href="modalidades-inscricao">Inscreva-se nas modalidades</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--
+                <section class="menu__login">
+                    <input class="login__entrar" type="button" value="Login" onclick="location.href='/login'">
+                    <input class="login__cadastrar"type="button" value="Cadastre-se" onclick="location.href='/cadastro'">
+                    <ion-icon name="person-outline"></ion-icon>
+                </section>
+            -->
+        </nav>
+    </section>
+</header>

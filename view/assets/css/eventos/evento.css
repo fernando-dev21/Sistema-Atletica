@@ -1,0 +1,13 @@
+.evento {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+    width: 25%;
+}
+
+@media screen and (max-width: 855px) {
+    .evento {
+        width: 90%;
+    }
+}

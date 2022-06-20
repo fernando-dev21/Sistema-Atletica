@@ -1,0 +1,10 @@
+.mapa__descricao {
+    text-align: center;
+}
+
+@media screen and (max-width: 550px){
+    .mapa__descricao {
+        text-align: justify;
+        padding: 1em 1.8em;
+    }
+}

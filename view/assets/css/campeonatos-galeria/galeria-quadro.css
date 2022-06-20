@@ -1,0 +1,12 @@
+.galeria__quadro {
+    display: flex;
+    padding-bottom: 2em;
+    padding-left: 2em;
+}
+
+@media screen and (max-width: 765px) {
+    .galeria__quadro {
+        flex-direction: column;
+        padding-left: 0;
+    }
+}

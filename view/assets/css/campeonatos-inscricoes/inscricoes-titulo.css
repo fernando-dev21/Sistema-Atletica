@@ -1,0 +1,12 @@
+.inscricoes__titulo {
+    font-size: 1.4em;
+    padding-bottom: 2em;
+    text-align: left;
+}
+
+@media screen and (max-width: 765px) {
+    .inscricoes__titulo {
+        padding-bottom: 1em;
+        text-align: center;
+    }
+}

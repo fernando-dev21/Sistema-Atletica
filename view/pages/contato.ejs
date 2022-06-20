@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados-->
+        <%- include('../partials/head-meta'); %>
+        <!--CSS: Fixos-->
+        <%- include('../partials/head-links'); %>
+        <!--CSS: Contato -->
+        <link rel="stylesheet" href="assets\css\contato\contato.css">
+        <link rel="stylesheet" href="assets\css\contato\contato-input.css">
+        <link rel="stylesheet" href="assets\css\contato\contato-select.css">
+        <link rel="stylesheet" href="assets\css\contato\contato-textarea.css">
+        <link rel="stylesheet" href="assets\css\contato\required.css">
+        <link rel="stylesheet" href="assets\css\contato\contato-fieldset.css">
+        <link rel="stylesheet" href="assets\css\contato\contato-input.css">
+        <link rel="stylesheet" href="assets\css\contato\contato-label.css">
+        <link rel="stylesheet" href="assets\css\contato\contato-form.css">
+        <link rel="stylesheet" href="assets\css\contato\contato-botao.css">
+        <link rel="stylesheet" href="assets\css\contato\contato-legend.css">
+        <!--JS: Scripts (head)-->
+        <%- include('../partials/head-js'); %>
+        <!--Titulo da Página-->       
+        <title>Fale Conosco</title>
+    </head>
+    <body>
+        <!--Header-->
+        <%- include('../partials/header'); %>
+        <main id="conteudo">
+            <section class="banner">
+                <div class="banner__imagem contatoImagem"> </div>
+                <h1 class="banner__titulo tituloAlternativo2">FALE CONOSCO</h1>
+            </section>
+            <!--Plugin VLibras-->   
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="index">Início</a></li>
+                <li>Fale Conosco</li>
+            </ul>
+            <!-- Contato -->
+            <section class="contato">
+                <form name="contato" class="contato__form" method="POST">
+                    <fieldset class="contato__fieldset">
+                        <legend class="contato__legend">Dados pessoais</legend>
+                        <label for="nome" class="contato__label required">Nome</label><br>
+                        <input type="text" name="nome" class="contato__input" required placeholder="Nome Completo"><br>
+                        <label for="data" class="contato__label required">Data de Nascimento</label><br>
+                        <input type="date" name="data" class="contato__input"  required><br>
+                        <label for="celular" class="contato__label celular">Celular</label><br>
+                        <input type="tel" name="celular" class="contato__input" required placeholder="(11) 9 9999-9999"><br>
+                        <label for="email" class="contato__label required">E-mail</label><br>
+                        <input type="email" name="e-mail" class="contato__input" required placeholder="seuemail@site.com.br"><br>
+                    </fieldset>
+                    <fieldset class="contato__fieldset">
+                        <legend class="contato__legend">Mensagem</legend>
+                        <label for="assunto" class="contato__label required">Assunto</label><br>
+                        <select name="assunto" class="contato__select" required>
+                            <option value="" selected disabled>Selecione</option>
+                            <option value="Dúvida">Dúvida</option>
+                            <option value="Elogio">Elogio</option>
+                            <option value="Reclamação">Reclamação</option>
+                            </select><br>
+                            <label class="contato__label" for="mensagem">Mensagem</label><br>
+                            <textarea class="contato__textarea required" name="mensagem" id="mensagem" placeholder="Digite aqui sua mensagem" rows="10" cols="50" required></textarea>                    
+                    </fieldset>
+                    <div class="contato__botoes">
+                        <input class="contato__botao" type="submit" name="enviar" value="Enviar">
+                        <input type="reset" name="limpar" class="contato__botao" value="Limpar">
+                    </div>
+                </form> 
+                <br>
+            </section>
+        </main>
+        <!--Footer-->
+        <%- include('../partials/footer'); %>
+        <!--JS: Scripts (body)-->
+        <%- include('../partials/body-js'); %>
+    </body>
+</html>

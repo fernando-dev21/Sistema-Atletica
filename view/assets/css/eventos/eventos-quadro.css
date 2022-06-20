@@ -1,0 +1,12 @@
+.eventos__quadro {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 855px) {
+    .eventos__quadro {
+        flex-direction: column;
+    }
+}

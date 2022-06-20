@@ -1,0 +1,25 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.menu_link{
+    width: 100%;
+}
+
+.img_menu{
+    width: 100%;
+    opacity: 0.4;
+}
+
+.img_404{
+    width: 40%;
+    opacity: 0.8;
+}
+
+.atribuicao a{
+    text-align: center;
+}

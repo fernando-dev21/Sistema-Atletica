@@ -1,0 +1,15 @@
+.noticia__imagem {
+    border-radius: 2%;
+    height: 180px; 
+    width: 100%;
+}
+
+@media screen and (max-width: 550px){
+    .noticia__imagem {
+        border-radius: 0;
+        height: 60vw; 
+        width: 60vw;
+        padding: 1em 2em;
+    }
+    
+}

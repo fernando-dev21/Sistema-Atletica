@@ -1,0 +1,34 @@
+.contato__botoes {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.contato__botao {
+    width: 48%;
+    height: 40px;
+    background-color: var(--formulario-botao);
+    color: var(--formulario-botao-texto);
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1024px) {
+   .contato__botoes {
+       width: 60%;
+   }
+}
+
+
+@media screen and (max-width: 550px) {
+    .contato__botoes {
+        width: 90%;
+    }
+
+    .contato__botao {
+        width: 48%;
+    }
+
+}

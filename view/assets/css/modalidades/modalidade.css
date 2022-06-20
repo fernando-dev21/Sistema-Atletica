@@ -1,0 +1,27 @@
+.modalidade {
+    background-color: var(--background-card-modalidade);
+    box-shadow: 13px 13px 0px -4px var(--fundo-quadro);
+    margin-bottom: 2em;
+    margin-left: 2em;
+    width: 18%;
+}
+
+.modalidade:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .modalidade {
+        min-width: 180px;
+        min-height: 180px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .modalidade {
+        width: 90%;
+        height: auto;
+    }
+}

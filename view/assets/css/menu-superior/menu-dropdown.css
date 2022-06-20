@@ -1,0 +1,12 @@
+.menu__dropdown {
+    width: 32px;
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .menu__dropdown {
+        display: block;
+        position: relative;
+        padding-bottom: 1%;
+    }
+} 

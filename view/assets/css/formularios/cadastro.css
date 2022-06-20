@@ -1,0 +1,68 @@
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 70%;
+}
+
+.cadastro{
+    background-color: #630101;
+    color: white;
+    margin: 2% 2% 2% 45%;
+    padding: 2%;
+    border-radius: 14px;
+}
+
+.cadastro__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form__titulo{
+    padding-top: 1%;
+}
+
+.form__campos{
+    padding-top: 1%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.botao__cadastrar{
+    width: 120px;
+    height: 3rem;
+    border-radius: 12px;
+    border: 3px grey solid;
+}
+
+.botao__cadastrar:hover{
+    border-color: yellow;
+    cursor: pointer;
+}
+
+.form__campos label{
+    padding-top: 1rem;
+    padding-left: 0.3rem;
+    text-align: left;
+}
+
+.form__campos  input{
+    border-radius: 12px;
+    height: 2em;
+}
+
+
+
+/*
+.campo__label-email{}
+.campo__label-senha{}
+.login__form-link{}
+.login__form-botao{}
+
+}
+*/

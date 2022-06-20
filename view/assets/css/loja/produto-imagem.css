@@ -1,0 +1,7 @@
+.produto__imagem {
+    width: 215px;
+    height: 215px; 
+    margin-top: 6%;
+    border-radius: 5%;
+    padding: .2em;
+}

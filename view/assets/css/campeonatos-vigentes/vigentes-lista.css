@@ -1,0 +1,14 @@
+.vigentes__lista {
+    list-style: none;    
+    padding-bottom: 2em;
+    text-align: left;
+}
+
+@media screen and (max-width: 550px) {
+    .vigentes__lista {
+        text-align: left;
+        border: 2px dashed var(--fundo-quadro);
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+}

@@ -1,0 +1,4 @@
+.campeonatos__vigentes {
+    display: flex;
+    flex-direction: column;
+}

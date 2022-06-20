@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados-->
+        <%- include('../partials/head-meta'); %>
+         <!--CSS: Fixos-->
+        <%- include('../partials/head-links'); %>
+        <!--CSS: Login-->
+        <link rel="stylesheet" href="assets\css\formularios\login.css">
+        <link rel="stylesheet" href="assets\css\usuario\sucesso.css">
+        <!--JS: Scripts (head)-->
+        <%- include('../partials/head-js'); %>
+        <!--Titulo da Página-->
+        <title>Login</title>
+    </head>
+    <body>
+        <!--Header-->
+        <%- include('../partials/header'); %>
+        <main id="conteudo">
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+            <div class="sucesso__container">
+                <p class="sucesso__texto"><%= mensagem%> <br> realizado(a) <br>com <br>sucesso</p>
+                <img class="sucesso__img" src="assets\img\usuario\Mic drop-bro.svg" alt="">
+            </div>
+        </main>
+        <!--Footer-->
+        <%- include('../partials/footer'); %>
+        <!--JS: Scripts (body)-->
+        <%- include('../partials/body-js'); %>
+    </body>
+</html>

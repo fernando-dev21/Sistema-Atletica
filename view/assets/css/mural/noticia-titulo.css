@@ -1,0 +1,14 @@
+.noticia__titulo {
+    font-size: 1em;
+    font-weight: bold;
+    padding: .2em;
+    text-align: center;
+    margin: 0;
+}
+
+@media screen and (max-width: 550px){
+    .noticia__titulo {
+        width: 60vw;
+    }
+
+}

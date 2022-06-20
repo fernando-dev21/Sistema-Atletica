@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados-->
+        <%- include('../partials/head-meta'); %>
+        <!--Icone-->
+        <link rel="icon" href="assets\img\icon\logo_icone.ico" type="image/x-icon">
+        <!--CSS: Base -->
+        <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="assets\css\base.css">
+        <!--CSS: Rodapé-->
+        <link rel="stylesheet" href="assets\css\rodape.css">
+        <link rel="stylesheet" href="assets\css\rodape-icones\icones__redeSociais.css">
+        <link rel="stylesheet" href="assets\css\rodape-icones\icones.css">
+        <link rel="stylesheet" href="assets\css\rodape-icones\iconesLogo-fatec.css">
+        <link rel="stylesheet" href="assets\css\rodape-icones\iconesRedesSocias-icone.css">
+        <link rel="stylesheet" href="assets\css\rodape-desenvolvimento\desenvolvimento-descricao.css">
+        <link rel="stylesheet" href="assets\css\rodape-desenvolvimento\desenvolvimento.css">
+        <!--CSS: Rodape-->    
+        <link rel="stylesheet" href="assets\css\usuario\barra.css">
+        <%- include('../partials/head-js'); %>
+        <!--Titulo da Página-->     
+    <title>Usuário</title>
+</head>
+<body>
+    <main id="conteudo">
+    <section class="barra">
+        <div class="barra__descricao">
+            <a href="/index"><img class="barra__icone" src="assets\img\usuario\arrow-undo-outline.svg" alt=""></a>
+            <img class="descricao__logo" src="./assets/img/menu-superior/logo_atletica.png" alt="Imagem do logo da Atlética da Fatec Zona Leste com um escudo nas cores vermelha e amarela e uma coruja branca">
+            <h1 class="descricao__texto">BEM VINDO A PÁGINA DE GESTORES DA ATLÉTICA</h1>
+        </div>
+        <div class="barra__icones">
+            <!--ICONES DE NOTIFICAÇÃO, MENSAGENS, ETC-->
+        </div>
+        <div class="barra__usuario">
+            <p class="usuario__nome"> <%= usuarioLogado.nome %></p>
+        </div>
+    </section>
+    <div class="container">
+        <section class="menu">
+            <ul class="menu__item">
+                <li><img class="item_icone" src="assets\img\usuario\person.svg" alt="">Gerenciar Membros</li>
+                <li><img class="item_icone" src="assets\img\usuario\basketball.svg" alt="">Gerenciar Esportes</li>
+                <li><img class="item_icone" src="assets\img\usuario\calendar.svg" alt="">Gerenciar Eventos</li>
+            </ul>
+        </section>
+        <section class="relatorios">
+
+            <div class="membros">
+                <p class="descricao">RELATÓRIO DE USUÁRIOS</p>
+                <table class="tabela"> 
+                    <thead> 
+                        <tr>
+                            <th>Perfil</th>
+                            <th>Nome</th>
+                            <th>CPF</th>
+                            <th>email</th>
+                            <th>telefone</th>
+                            <th>Data de Nascimento</th>
+                            <th>Curso</th>
+                            <th>Turno</th>
+                            <th>Turma</th>
+                            <th>Editar dados</th>
+
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <% for(var i = 0; i < membros.length; i++) { %>
+                            <tr>
+                                <td><%= membros[i].perfil %></td>
+                                <td><%= membros[i].nome %></td>
+                                <td><%= membros[i].cpf %></td>     
+                                <td><%= membros[i].email %></td>
+                                <td><%= membros[i].telefone %></td>
+                                <td><%= membros[i].data_nascimento.toLocaleDateString('pt-BR', {timeZone: 'UTC'}) %></td>  
+                                <td>CURSO</td>
+                                <td>TURNO</td>  
+                                <td>TURMA</td>                                                        
+                                <td><input type="button" value="editar"></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modalidades">
+                <p class="descricao">MODALIDADES ESPORTIVAS</p>
+                <table class="tabela"> 
+                    <thead> 
+                        <tr>
+                            <th>Modalidade</th>
+                            <th>Genero</th>
+                            <th>Dia dos treinos</th>
+                            <th>Horário</th>
+                            <th>Editar dados</th>
+                            <th>Atletas</th>
+
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <% modalidades.forEach(function(modalidade){ %>   
+                        <tr>                            
+                            <td><%= modalidade.nome %></td>
+                            <td><%= modalidade.genero %></td>
+                            <td><%= modalidade.dia_da_semana %></td>
+                            <td><%= modalidade.horario %></td>
+                            <td><input type="button" value="editar"></td>
+                            <td><input type="button" value="exibir"></td>
+                        </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="eventos">
+                <p class="descricao">EVENTOS CADASTRADOS</p>
+                <table class="tabela"> 
+                    <thead> 
+                        <tr>
+                            <th>Evento</th>
+                            <th>Descrição</th>
+                            <th>Data</th>
+                            <th>Horário de início</th>
+                            <th>Local</th>
+                            <th>Orcamento</th>
+                            <th>Editar dados</th>
+                            <th>Inscritos</th>
+
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <% eventos.forEach(function(evento){ %> 
+                            <tr>
+                                <td><%= evento.nome %></td>
+                                <td><%= evento.descricao %></td>
+                                <td><%= evento.data_realizacao.toLocaleDateString('pt-BR', {timeZone: 'UTC'}) %></td>
+                                <td><%= evento.horario_inicio %></td>
+                                <td><%= evento.localidade %></td>
+                                <td><%= evento.orcamento %></td>
+                                <td><input type="button" value="editar"></td>
+                                <td><input type="button" value="exibir"></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="eventos">
+                <p class="descricao">CURSOS CADASTRADOS</p>
+                <table class="tabela"> 
+                    <thead> 
+                        <tr>
+                            <th>Curso</th>
+                            <th>Semestres</th>
+                            <th>Turno</th>
+                            <th>Editar dados</th>
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <% cursos.forEach(function(curso){ %> 
+                            <tr>
+                                <td><%= curso.nome %></td>
+                                <td><%= curso.semestres %></td>
+                                <td><%= curso.turno %></td>
+                                <td><input type="button" value="editar"></td>
+                            </tr>
+                        <% }) %>
+                    </tbody>
+                </table>
+            </div>
+
+            
+        </section>
+    </div>    
+
+    </main>
+     <%- include('../partials/body-js'); %>
+</body>
+</html>

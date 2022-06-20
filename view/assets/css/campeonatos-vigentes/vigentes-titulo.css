@@ -1,0 +1,13 @@
+.vigentes__titulo {
+    color: var(--titulo-h1);
+    font-size: 1.4em;
+    padding-bottom: .5em;
+    text-align: left;
+}
+
+
+@media screen and (max-width: 765px) {
+    .vigentes__titulo {
+        text-align: center;
+    }
+}

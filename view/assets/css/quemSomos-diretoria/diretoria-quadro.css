@@ -1,0 +1,9 @@
+.diretoria__quadro {
+    display: flex;
+}
+
+@media screen and (max-width: 768px) {
+    .diretoria__quadro {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,9 @@
+.vigentes__item {
+    color: var(--preto-padrao);
+    text-decoration: none;
+}
+
+.vigentes__item:hover {
+    color: var(--vermelho-link);
+    text-decoration: underline;
+}

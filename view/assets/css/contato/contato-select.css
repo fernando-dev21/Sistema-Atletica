@@ -1,0 +1,8 @@
+.contato__select {
+    width: 100%;
+    height: 38px;
+    background-color: var(--vermelho-atletica);
+    color: var(--branco-texto);
+    border: 2px solid var(--formulario-borda);
+    margin-bottom: .4em;
+}

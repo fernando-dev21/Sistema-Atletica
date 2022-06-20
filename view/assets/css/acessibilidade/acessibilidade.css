@@ -1,0 +1,36 @@
+.acessibilidade {
+    background-color: var(--branco-medio);
+    display: flex;
+    font-size: .7em;
+    justify-content: space-between;
+    padding: 0.2em 0 0.2em 0;
+    border: 0;
+    margin: 0;
+}
+
+.acessibilidade ul {
+    list-style: none;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+.acessibilidade a {
+    color: var(--acessibilidade-links);
+    text-decoration: none;
+}
+
+.acessibilidade a:hover {
+    color: var(--azul-link);
+    text-decoration: underline;
+}
+
+.PaginaAcessibilidade {
+    text-align: justify;
+    padding: 1.5em;
+    font-size: 1em;
+}
+
+.PaginaAcessibilidade p {
+    margin: 0;
+    padding: 0;
+}

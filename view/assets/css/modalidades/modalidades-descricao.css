@@ -1,0 +1,11 @@
+.modalidades__descricao {
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+@media screen and (max-width: 550px) {
+    .modalidades__descricao {
+        text-align: justify;
+        padding: 1em 1.2em;
+    }
+}

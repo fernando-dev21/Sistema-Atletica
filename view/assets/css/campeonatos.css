@@ -1,0 +1,11 @@
+.campeonatos {
+    margin: 0;
+    padding-left: 2em;
+    padding-bottom: 2em;
+}
+
+@media screen and (max-width: 550px) {
+    .campeonatos {
+        padding: 1em;
+    }
+}

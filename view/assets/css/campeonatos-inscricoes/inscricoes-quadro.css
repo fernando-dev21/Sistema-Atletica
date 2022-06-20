@@ -1,0 +1,11 @@
+.inscricoes__quadro {
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width: 765px) {
+    .inscricoes__quadro {
+        flex-direction: column;
+        padding-left: 0;
+    }
+}

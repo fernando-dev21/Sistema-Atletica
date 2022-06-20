@@ -1,0 +1,19 @@
+.sucesso__container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.sucesso__img{
+    width: 30vw;
+}
+
+.sucesso__texto {
+    width: 20vw;
+    font-size: 3em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-align: center;
+    /* deslocamento-x | deslocamento-y | raio-de-desfoque | cor */
+    text-shadow: 10px 10px 10px rgb(128, 126, 126);
+}

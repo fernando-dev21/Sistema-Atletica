@@ -1,0 +1,41 @@
+.banner__titulo {
+    background-color: var(--cinza-fundo);
+    color: var(--titulo-h1);
+    font-size: 3em;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+    .banner__titulo {
+        font-size: 2.9em;
+        top: 50%;
+    }
+    .tituloAlternativo {
+        top: 70%;
+    }
+    .tituloAlternativo2 {
+        top: 70%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .banner__titulo {
+        font-size: 2.5em;
+        top: 46%;
+    }
+
+    .tituloAlternativo {
+        top: 63%;
+        font-size: 3em;
+    }
+    .tituloAlternativo2 {
+        top: 70%;
+    }
+    
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados-->
+        <%- include('../partials/head-meta'); %>
+        <!--CSS: Fixos-->
+        <%- include('../partials/head-links'); %>
+        <!--CSS: QuemSomos-->
+        <link rel="stylesheet" href="assets\css\quemSomos-historia\historia.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-historia\historia-titulo.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-historia\historia-descricao.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-logos\logos.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-logos\logos-titulo.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-logos\logos-imagem.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-diretoria\diretoria.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-diretoria\diretoria-titulo.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-diretoria\diretoria-quadro.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-diretoria\diretoria-imagem.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-diretoria\membros.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-diretoria\membro.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-diretoria\membro-titulo.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-diretoria\membro-nome.css">
+        <link rel="stylesheet" href="assets\css\quemSomos-diretoria\membro-contato.css">
+        <link rel="stylesheet" href="assets\css\quemSomos.css">
+        <!--JS: Scripts (head)-->
+        <%- include('../partials/head-js'); %>
+        <!--Titulo da Página-->
+        <title>Quem Somos</title>
+    </head>
+    <body>
+    <!--Header-->
+    <%- include('../partials/header'); %>
+        <main id="conteudo">
+            <section class="banner">
+                <div class="banner__imagem quemSomosImagem"> </div>
+                <h1 class="banner__titulo tituloAlternativo">QUEM SOMOS</h1>
+            </section>
+            <!--Plugin VLibras-->   
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="index">Início</a></li>
+                <li>Quem somos</li>
+            </ul>
+            <!-- Quem Somos -->
+            <div class="quemSomos">  
+                <!-- História -->
+                <section class="historia">
+                    <h1 class="historia__titulo">HISTÓRIA</h1>
+                    <p class="historia__descricao">Fundada em 2005, após a participação no primeiro Interfatec em Praia Grande. A Atlética Fatec Zona Leste tem como símbolo, a Coruja. Pois, antigamente ao fundo de sua quadra existia um ninho, onde corujas sobrevoavam os treinos esportivos e campeonatos internos. Com sua participação ativa nas modalidades coletivas: feminino e masculino alcançou em 2005, 2006 e 2007 o terceiro lugar no Interfatec. Também participou dos Jogos da Cidade. Infelizmente, após 2008, se extinguiu. E a responsabilidade das atividades esportivas foi para o Diretório Acadêmico Fatec Zona Leste, exercendo a mesma função que a Atlética, mantendo seus campeonatos internos de futsal.</p>
+                    <p class="historia__descricao">A ZL retornou sua participação nos Interfatec de forma tímida em 2010 e 2011 com alguns membros, voltando como delegação em 2012, as corujas ressurgem com mais força nos jogos e na integração fatecana! Com a crescente da delegação desde então, em 2015 renasce nossa Atlética, mas forte e convicta de seus objetivos esportivos dentro e fora do Interfatec. Atualmente na série Ouro, ficou em 7° lugar no Inter 2015 realizado na cidade de Sertãozinho e em 8° lugar no Inter 2016, que foi realizado em Itapetininga.</p>
+                </section>
+                <!-- Logos -->
+                <section class="logos">
+                    <h2 class="logos__titulo">Evolução dos logos</h2>
+                    <img class="logos__imagem" src="assets\img\quemSomos-logo\logo_atletica_1.png" alt="Imagem do primeiro logo da Atlética contendo um escudo com o desenho de uma coruja segurando um copo de cerveja em preto e branco">
+                    <img class="logos__imagem" src="assets\img\quemSomos-logo\logo_atletica_2.png" alt="Imagem do segundo logo da Atética contendo uma coruja de asas abertas em preto e branco">
+                    <img class="logos__imagem" src="assets\img\quemSomos-logo\logo_atletica.png" alt="Imagem do logo atual da Atlética contendo um escudo nas cores vermelha e amarela e uma coruja branca de asas abertas">
+                </section>
+                <!-- Diretoria -->
+                <section class="diretoria">
+                    <h2 class="diretoria__titulo">DIRETORIA 2022</h2>
+                    <div class="diretoria__quadro">
+                        <img class="diretoria__imagem" src="assets\img\quemSomos-Diretoria\diretoria.jpg" alt="Imagem contendo seis estudantes representando a diretoria da Atética">
+                        <section class="membros">
+                            <div class="membro">
+                                <h2 class="membro__nome">Nome</h2>
+                                <h3 class="membro__titulo">Presidente</h3>
+                                <h4 class="membro__contato">Contato - email@fatec.sp.gov.br</h4>
+                            </div>
+                            <div class="membro">
+                                <h2 class="membro__nome">Nome</h2>
+                                <h3 class="membro__titulo">Vice-presidente</h3>
+                                <h4 class="membro__contato">Contato - email@fatec.sp.gov.br</h4>
+                            </div>
+                            <div class="membro">
+                                <h2 class="membro__nome">Nome</h2>
+                                <h3 class="membro__titulo">Secretário</h3>
+                                <h4 class="membro__contato">Contato - email@fatec.sp.gov.br</h4>
+                            </div>
+                            <div class="membro">
+                                <h2 class="membro__nome">Nome</h2>
+                                <h3 class="membro__titulo">Tesoureiro</h3>
+                                <h4 class="membro__contato">Contato - email@fatec.sp.gov.br</h4>
+                            </div>
+                            <div class="membro">
+                                <h2 class="membro__nome">Nome</h2>
+                                <h3 class="membro__titulo">Diretor de Eventos</h3>
+                                <h4 class="membro__contato">Contato - email@fatec.sp.gov.br</h4>
+                            </div>
+                            <div class="membro">
+                                <h2 class="membro__nome">Nome</h2>
+                                <h3 class="membro__titulo">Diretor de Esportes</h3>
+                                <h4 class="membro__contato">Contato - email@fatec.sp.gov.br</h4>
+                            </div>
+                        </section>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <!--Footer-->
+        <%- include('../partials/footer'); %>
+        <!--JS: Scripts (body)-->
+        <%- include('../partials/body-js'); %>
+    </body>
+</html>

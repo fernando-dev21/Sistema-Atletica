@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados-->
+        <%- include('../partials/head-meta'); %>
+        <!--CSS: Fixos-->
+        <%- include('../partials/head-links'); %>
+        <!-- CSS: Campeonatos -->
+        <link rel="stylesheet" href="assets\css\campeonatos.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-galeria\campeonatos-galeria.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-galeria\galeria-descricao.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-galeria\galeria-imagem.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-galeria\galeria-link.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-galeria\galeria-quadro.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-galeria\galeria-titulo.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-inscricoes\campeonato-inscricoes.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-inscricoes\incricoes-descricao.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-inscricoes\incricoes-link.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-inscricoes\inscricoes-imagem.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-inscricoes\inscricoes-quadro.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-inscricoes\inscricoes-titulo.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-vigentes\campeonato-vigente.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-vigentes\vigentes-item.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-vigentes\vigentes-lista.css">
+        <link rel="stylesheet" href="assets\css\campeonatos-vigentes\vigentes-titulo.css">
+        <!--JS: Scripts (head)-->
+        <%- include('../partials/head-js'); %>
+        <!--Titulo da Página-->     
+    <title>Campeonatos</title>
+</head>
+<body>
+    <!--Header-->
+    <%- include('../partials/header'); %>
+    <main id="conteudo">
+        <section class="banner">
+            <div class="banner__imagem campeonatosImagem"> </div>
+            <h1 class="banner__titulo tituloAlternativo">CAMPEONATOS</h1>
+        </section>
+        <!--Plugin VLibras-->   
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+        </div>
+        <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+        <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+        </script>
+        <!-- breadcrumb -->
+        <ul class="breadcrumb">
+            <li><a href="index">Início</a></li>
+            <li>Campeonatos</li>
+        </ul>
+        <!-- Campeonatos -->
+        <div class="campeonatos">
+            <section class="campeonatos__vigentes">
+                <h2 class="vigentes__titulo">CAMPEONATOS ROLANDO</h2>
+                <ul class="vigentes__lista">
+                    <li><a class="vigentes__item" href="#">Campeonato de Volei Masculino</a></li>
+                    <li><a class="vigentes__item" href="#">Campeonato de Volei Feminino</a></li>
+                    <li><a class="vigentes__item" href="#">Campeonato de Futsal Masculino</a></li>
+                    <li><a class="vigentes__item" href="#">Campeonato de Futsal Feminino</a></li>
+                    <li><a class="vigentes__item" href="#">Campeonato de Xadrez</a></li>
+                    <li><a class="vigentes__item" href="#">Campeonato de Basquete Masculino</a></li>
+                    <li><a class="vigentes__item" href="#">Campeonato de Basquete Feminino</a></li>
+                </ul>
+            </section>
+            <section class="campeonatos__galeria">
+                <h2 class="galeria__titulo"><a href="#" class="galeria__link">GALERIA DE TROFÉUS</a></h2>
+                <div class="galeria__quadro">
+                    <a href="#" class="galeria__link"><img class="galeria__imagem" src="assets\img\campeonatos\trofeus.png" alt="Imagem de três troféus, respectivamente na cores prata, dourado e bronze"></a>
+                    <p class="galeria__descricao">Viaje no tempo através da nossa galeria de troféus, reveja nossas conquistas durante todos estes anos! Veja a história da Fatec-ZL pela ótica do esporte e entretenimento.</p>
+                </div>
+            </section>
+            <section class="campeonatos__inscricoes">
+                <h2 class="inscricoes__titulo"><a href="#" class="inscricoes__link">ACOMPANHE AS DATAS DAS INSCRIÇÕES</a></h2>
+                <div class="inscricoes__quadro">
+                    <a class="inscricoes__link" href="#"><img class="inscricoes__imagem" src="assets\img\campeonatos\calendario.png" alt="Imagem contendo uma ilustração de uma folha de calendário"></a>
+                    <p class="inscricoes__descricao">Acompanhe por aqui o status das inscrições - revise dados ou solicite o cancelamento e fique ligado nas datas e prazos para entrega de documentos solicitados.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--Footer-->
+    <%- include('../partials/footer'); %>
+    <!--JS: Scripts (body)-->
+    <%- include('../partials/body-js'); %>
+</body>
+</html>

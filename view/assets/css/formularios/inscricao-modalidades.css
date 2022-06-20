@@ -1,0 +1,64 @@
+.container{
+    padding-bottom: 2em;
+}
+
+.descricao{
+    padding-top: 1em;
+}
+
+.inscricao__form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inscricao__caixa{
+    display: flex;
+    justify-content: center;
+}
+
+.inscricao__select{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.inscricao__select label{
+    padding-top: .8em;
+}
+
+.inscricao__img img{
+    padding-left: 15%;
+    width: 280px;
+}
+
+.botao__cadastrar{
+    width: 180px;
+    line-height: 3em;;
+    border-radius: 28px;
+}
+
+.botao__contato{
+    width: 180px;
+    line-height: 3em;;
+    border-radius: 28px;
+}
+
+.botao__contato:hover{
+    cursor: pointer;
+    border-color: yellow;
+}
+
+.botao__cadastrar:hover{
+    cursor: pointer;
+    border-color: yellow;
+}
+
+/*
+.descricao__titulo{}
+
+.descricao__texto{}
+
+.inscricao__img{}
+
+.form__botoes{}
+*/

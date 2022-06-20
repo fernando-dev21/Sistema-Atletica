@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados-->
+        <%- include('../partials/head-meta'); %>
+        <!--Icone-->
+        <link rel="icon" href="assets\img\icon\logo_icone.ico" type="image/x-icon">
+        <!--CSS: Base -->
+        <link rel="stylesheet" href="./assets/css/normalize.css">
+        <link rel="stylesheet" href="./assets/css/reset.css">
+        <link rel="stylesheet" href="assets\css\base.css">
+        <!--CSS: Rodapé-->
+        <link rel="stylesheet" href="assets\css\rodape.css">
+        <link rel="stylesheet" href="assets\css\rodape-icones\icones__redeSociais.css">
+        <link rel="stylesheet" href="assets\css\rodape-icones\icones.css">
+        <link rel="stylesheet" href="assets\css\rodape-icones\iconesLogo-fatec.css">
+        <link rel="stylesheet" href="assets\css\rodape-icones\iconesRedesSocias-icone.css">
+        <link rel="stylesheet" href="assets\css\rodape-desenvolvimento\desenvolvimento-descricao.css">
+        <link rel="stylesheet" href="assets\css\rodape-desenvolvimento\desenvolvimento.css">
+        <!--CSS: Rodape-->    
+        <link rel="stylesheet" href="assets\css\usuario\barra.css">
+        <%- include('../partials/head-js'); %>
+        <!--Titulo da Página-->     
+    <title>Usuário</title>
+</head>
+<body>
+    <main id="conteudo">
+    <section class="barra">
+        <div class="barra__descricao">
+            <a href="/index"><img class="barra__icone" src="assets\img\usuario\arrow-undo-outline.svg" alt=""></a>
+            <img class="descricao__logo" src="./assets/img/menu-superior/logo_atletica.png" alt="Imagem do logo da Atlética da Fatec Zona Leste com um escudo nas cores vermelha e amarela e uma coruja branca">
+            <h1 class="descricao__texto">BEM VINDO A PÁGINA DE MEMBROS DA ATLÉTICA</h1>
+        </div>
+        <div class="barra__icones">
+            <!--ICONES DE NOTIFICAÇÃO, MENSAGENS, ETC-->
+        </div>
+        <div class="barra__usuario">
+            <p class="usuario__nome"> <%= usuarioLogado.nome %></p>
+        </div>
+    </section>
+    <div class="container">
+        <section class="menu">
+            <ul class="menu__item">
+                <li><img class="item_icone" src="assets\img\usuario\person.svg" alt="">Meus dados</li>
+                <li><img class="item_icone" src="assets\img\usuario\basketball.svg" alt="">Meus treinos</li>
+                <li><img class="item_icone" src="assets\img\usuario\calendar.svg" alt="">Meus eventos</li>
+            </ul>
+        </section>
+        <section class="info">
+            <div class="dados">
+                <p class="descricao">DADOS CADASTRADOS</p>
+                <table class="tabela">
+                        <tr>
+                            <th>Nome: </th>
+                            <td><%= usuarioLogado.nome %></td>
+                        </tr>
+                        <tr>
+                            <th>CPF: </th>
+                            <td><%= usuarioLogado.cpf %></td>
+                        </tr>
+                        <tr>
+                            <th>e-mail: </th>
+                            <td><%= usuarioLogado.email %></td>
+                        </tr>
+                        <tr>
+                            <th>telefone: </th>
+                            <td><%= usuarioLogado.telefone %></td>
+                        </tr>
+                        <tr>
+                            <th>Data de Nascimento: </th>
+                            <td><%= usuarioLogado.data_nascimento.toLocaleDateString('pt-BR', {timeZone: 'UTC'}) %></td>
+                        </tr>
+                        <tr>
+                            <th>Curso: </th>
+                            <td><%= cursoDoUsuario.nome %></td>
+                        </tr>
+                        <tr>
+                            <th>Turno: </th>
+                            <td> <%= cursoDoUsuario.turno %></td>
+                        </tr>
+                        <tr>
+                            <th>Turma: </th>
+                            <td><%= usuarioLogado.turma %></td>
+                        </tr>
+                </table>
+            </div>
+            <div class="modalidades">
+                <p class="descricao">MEUS TREINOS</p>
+                <table class="tabela"> 
+                    <thead> 
+                        <tr>
+                            <th>Modalidade</th>
+                            <th>Genero</th>
+                            <th>Dia dos treinos</th>
+                            <th>Horário</th>
+
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <tr>
+                            <td>Futsal</td>
+                            <td>Misto</td>
+                            <td>Segunda-Feira / Terça-feira</td>
+                            <td>2ª das 14:00 as 16:00 / 4ª das 13:00 as 15:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="eventos">
+                <p class="descricao">MEUS EVENTOS</p>
+                <table class="tabela"> 
+                    <thead> 
+                        <tr>
+                            <th>Evento</th>
+                            <th>Data</th>
+                            <th>Horário de início</th>
+                            <th>Local</th>
+
+                        </tr>
+                    </thead>
+                    <tbody> 
+                        <% eventosDoUsuario.forEach(function(eventoUsuario){ %> 
+                            <tr>
+                                <td><%= eventoUsuario.nome %></td>
+                                <td><%= eventoUsuario.data_realizacao.toLocaleDateString('pt-BR', {timeZone: 'UTC'}) %></td>
+                                <td><%= eventoUsuario.horario %></td>
+                                <td><%= eventoUsuario.localidade %></td>
+                            </tr>
+                        <% }) %>      
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </div>    
+
+    </main>
+    <%- include('../partials/body-js'); %>
+</body>
+</html>

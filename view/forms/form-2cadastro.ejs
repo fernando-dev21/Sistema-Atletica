@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados-->
+        <%- include('../partials/head-meta'); %>
+        <!--CSS: Fixos-->
+        <%- include('../partials/head-links'); %>
+        <!--CSS: Cadastro-->
+        <link rel="stylesheet" href="assets\css\formularios\cadastro.css">
+        <!--JS: Scripts (head)-->
+        <%- include('../partials/head-js'); %>
+        <!--Titulo da Página-->
+    </head>
+    <body>
+        <!--Header-->
+        <%- include('../partials/header'); %>
+        <main id="conteudo">
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+            <div class="container">
+                <section class="cadastro">       
+                    <form  class="cadastro__form" method="POST" action="cadastro-salvar" >
+                        <h1 class="form__titulo">Cadastre-se</h1>
+                        <div class="form__campos">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email"required placeholder="nome@site.com.br">
+                            <label for="cpf">CPF</label>
+                            <input type="number" name="cpf" required placeholder="999.999.999-99">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" required placeholder="Nome Completo">
+                            <label for="data">Data de Nascimento</label>
+                            <input type="date" name="data" required>
+                            <label for="curso">Curso:</label>
+                            <select name="curso">
+                                <% cursos.forEach(function(curso){ %>
+                                    <option value=" <%= curso.id %> "> <%= curso.nome %> - <%= curso.turno %> </option>    
+                                <% }) %>
+                            </select>
+                            <label for="turma">Turma:</label>
+                            <input type="text" name="turma">
+                            <label for="celular">Celular</label>
+                            <input type="tel" name="telefone" placeholder="(99) 99999-9999">
+                            <label for="senha" >Senha:</label>
+                            <input type="password" name="senha"  required>
+                            <label for="confirmacao" >Confirmação de Senha:</label>
+                            <input type="password" name="confirmacao"  required>                     
+                        </div>
+                        <div class="form__botoes"><br>
+                            <input class="botao__cadastrar" type="submit" value= "Cadastrar" >
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <!--Footer-->
+        <%- include('../partials/footer'); %>
+       <!--JS: Scripts (body)-->
+       <%- include('../partials/body-js'); %>
+    </body>
+</html>

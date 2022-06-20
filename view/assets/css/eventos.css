@@ -1,0 +1,5 @@
+.eventos {
+    display: flex;
+    justify-content: center;
+    padding: 0 2em;
+}

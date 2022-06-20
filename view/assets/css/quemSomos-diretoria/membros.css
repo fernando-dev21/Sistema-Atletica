@@ -1,0 +1,13 @@
+.membros {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: calc(2% - 10px) 2% 2% 1%;
+}
+
+@media screen and (max-width: 768px) {
+    .membros {
+        margin: 0;
+    }
+    
+}

@@ -1,0 +1,7 @@
+.contato__textarea {
+    width: 99%;
+    background-color: var(--vermelho-atletica);
+    color: var(--branco-texto);
+    border: 2px solid var(--formulario-borda);
+    margin-bottom: .4em;
+}

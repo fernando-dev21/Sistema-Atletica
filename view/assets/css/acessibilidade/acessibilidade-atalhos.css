@@ -1,0 +1,19 @@
+.acessibilidade__atalhos {
+    display: flex;
+}
+
+.acessibilidade__atalhos a{
+    margin-left: 1em;
+}
+
+@media screen and (max-width: 550px) {
+    .acessibilidade__atalhos {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .acessibilidade__atalhos {
+        display: none;
+    }
+}

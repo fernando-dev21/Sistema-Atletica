@@ -1,0 +1,16 @@
+.inscricoes__descricao {
+    border: 2px dashed var(--fundo-quadro);
+    height: 10%;
+    margin-left: 6%;
+    padding: 0 1em;
+    text-align: justify;
+    width: 520px;
+}
+
+@media screen and (max-width: 765px) {
+    .inscricoes__descricao {
+        margin: 0;
+        width: 90%;
+        height: auto;
+    }
+}

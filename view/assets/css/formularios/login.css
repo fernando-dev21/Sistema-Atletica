@@ -1,0 +1,70 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 69.17vh;
+}
+
+.login{
+    background-color: #630101;
+    color: white;
+    margin: 2%;
+    padding: 2%;
+    border-radius: 14px;
+    width: 40%;
+}
+
+.login__titulo{
+    padding-top: 3%;
+}
+
+.login__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+}
+
+.login__form-campo{
+    padding-top: 3%;
+}
+
+.campo__input-senha{
+    margin-top: 10px;
+    width: 16rem;
+}
+
+.campo__input-email{
+    width: 16rem;
+}
+
+.botao__enviar{
+    width: 80px;
+    height: 3rem;
+    border-radius: 12px;
+    border: 3px grey solid;
+}
+
+.botao__enviar:hover{
+    border-color: yellow;
+    cursor: pointer;
+}
+
+.link__recuperarSenha{
+    color: white;
+}
+
+.link__recuperarSenha:hover{
+    color: yellow;
+}
+
+
+/*
+.campo__label-email{}
+.campo__label-senha{}
+.login__form-link{}
+.login__form-botao{}
+
+}
+*/

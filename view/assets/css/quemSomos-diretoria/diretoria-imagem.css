@@ -1,0 +1,16 @@
+.diretoria__imagem {
+    border-radius: 2%;
+    box-shadow: 0px 0px 0px 10px var(--shadow);
+    height: 30%;
+    margin: 2% 2% 2% 2%;
+    width: 60%;
+}
+
+@media screen and (max-width: 768px) {
+    .diretoria__imagem {
+        height: auto;
+        width: 80vw;
+        margin: 1.5em;
+        padding: 0;
+    }
+}

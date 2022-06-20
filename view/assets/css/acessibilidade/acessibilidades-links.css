@@ -1,0 +1,33 @@
+.acessibilidade__links {
+    display: flex;
+}
+
+.acessibilidade__links a {
+    margin-right: 1em;
+}
+
+@media screen and (max-width: 550px) {
+    .acessibilidade__links {
+        font-size: 1em;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .acessibilidade__links a {
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .acessibilidade__links {
+        font-size: 1em;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .acessibilidade__links a {
+        margin-right: 0;
+    }
+}
+
+

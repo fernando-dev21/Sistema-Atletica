@@ -1,0 +1,12 @@
+.diretoria__titulo {
+    color: var(--titulo-h2);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .diretoria__titulo {
+        font-size: 1.8em;
+        padding: 1em 0 .5em 0;
+    }
+    
+}

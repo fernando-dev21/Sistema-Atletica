@@ -1,0 +1,12 @@
+.mapa__titulo {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 1em;
+}
+
+
+@media screen and (max-width: 550px){
+    .mapa__titulo {
+        padding-top: 1em;
+    }
+}

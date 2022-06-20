@@ -1,0 +1,5 @@
+.campeonatos__inscricoes {
+    display: flex;
+    flex-direction: column;
+}
+

@@ -1,0 +1,44 @@
+/*breadcrumbs*/
+
+.breadcrumb {
+    list-style: none;    
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0;
+}
+
+.breadcrumb li {
+    display: inline;    
+    font-size: 1em;
+    color: var(--titulo-h1);
+}
+
+#main-modalidades .breadcrumb {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.breadcrumb li a {
+    color: var(--preto-padrao);
+    text-decoration: none;
+}
+
+.breadcrumb li+li:before{
+    content: "/\00a0";
+    padding: 6px;
+}
+
+.breadcrumb li a:hover{
+    text-decoration: underline;
+    color: var(--azul-link);
+    
+}
+
+
+/* Media query da breadcrumb*/
+@media screen and (max-width: 630px){
+    .breadcrumb{
+        text-align: center;
+        text-transform: uppercase;
+    }
+}

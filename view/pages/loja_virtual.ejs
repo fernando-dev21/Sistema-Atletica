@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <!--Metadados-->
+        <%- include('../partials/head-meta'); %>
+        <!--CSS: Fixos-->
+        <%- include('../partials/head-links'); %>
+        <!--CSS: Loja-->
+        <link rel="stylesheet" href="assets\css\loja.css">
+        <link rel="stylesheet" href="assets\css\loja\loja-descricao.css">
+        <link rel="stylesheet" href="assets\css\loja\loja-quadro.css">
+        <link rel="stylesheet" href="assets\css\loja\produto-cor.css">
+        <link rel="stylesheet" href="assets\css\loja\produto-imagem.css">
+        <link rel="stylesheet" href="assets\css\loja\produto-tamanho.css">
+        <link rel="stylesheet" href="assets\css\loja\produto-titulo.css">
+        <link rel="stylesheet" href="assets\css\loja\produto-valor.css">
+        <link rel="stylesheet" href="assets\css\loja\produto.css">
+        <!--JS: Scripts (head)-->
+        <%- include('../partials/head-js'); %>
+        <!--Titulo da Página-->
+        <title>Loja Virtual</title>
+    </head>
+    <body>
+        <<!--Header-->
+        <%- include('../partials/header'); %>
+        <main id="conteudo">
+            <section class="banner">
+                <div class="banner__imagem lojaImagem"> </div>
+                <h1 class="banner__titulo tituloAlternativo">LOJA VIRTUAL</h1>
+            </section>
+            <!--Plugin VLibras-->   
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+            <!-- breadcrumb -->
+            <ul class="breadcrumb">
+                <li><a href="index">Início</a></li>
+                <li>Loja Virtual</li>
+            </ul>
+            <!-- Modalidades -->
+            <setion class="loja">
+                <div class="loja__quadro">
+                    <section class="produto">
+                        <img src="assets\img\loja\blusa_preta.webp" alt="Imagem de um moletom com mangas longas, com touca e de cor preta" class="produto__imagem">
+                        <h2 class="produto__titulo">Moletom Atlética</h2>
+                        <h2 class="produto__cor">Preto</h2>
+                        <p class="produto__tamanho">(Unissex, Tamanhos Diversos)</p>
+                        <p class="produto__valor">Valor: R$100,00 em até 2x s/ juros</p>
+                    </section>
+                    <section class="produto">
+                        <img src="assets\img\loja\blusa_vermelha.webp" alt="Imagem de um moletom com mangas longas, com touca e de cor vermelha" class="produto__imagem">
+                        <h2 class="produto__titulo">Moletom Atlética</h2>
+                        <h2 class="produto__cor">Vermelho</h2>
+                        <p class="produto__tamanho">(Unissex, Tamanhos Diversos)</p>
+                        <p class="produto__valor">Valor: R$100,00 em até 2x s/ juros</p>
+                    </section>
+                    <section class="produto">
+                        <img src="assets\img\loja\blusa_branca.webp" alt="Imagem de um moletom com mangas longas, com touca e de cor branca" class="produto__imagem">
+                        <h2 class="produto__titulo">Moletom Atlética</h2>
+                        <h2 class="produto__cor">Branco</h2>
+                        <p class="produto__tamanho">(Unissex, Tamanhos Diversos)</p>
+                        <p class="produto__valor">Valor: R$100,00 em até 2x s/ juros</p>
+                    </section>
+                    <section class="produto">
+                        <img src="assets\img\loja\collegepreta.webp" alt="Imagem de um moletom college com mangas longas, abertura na frente com botões e de cor preta" class="produto__imagem">
+                        <h2 class="produto__titulo">College Atlética</h2>
+                        <h2 class="produto__cor">Preto</h2>
+                        <p class="produto__tamanho">(Unissex, Tamanhos Diversos)</p>
+                        <p class="produto__valor">Valor: R$150,00 em até 3x s/ juros</p>
+                    </section>
+                    <section class="produto">
+                        <img src="assets\img\loja\college_vermelha.webp" alt="Imagem de um moletom college com mangas longas, abertura na frente com botões e de cor vermelha" class="produto__imagem">
+                        <h2 class="produto__titulo">College Atlética</h2>
+                        <h2 class="produto__cor">Vermelho</h2>
+                        <p class="produto__tamanho">(Unissex, Tamanhos Diversos)</p>
+                        <p class="produto__valor">Valor: R$150,00 em até 3x s/ juros</p>
+                    </section>
+                    <section class="produto">
+                        <img src="assets\img\loja\college_azul.webp" alt="Imagem de um moletom college com mangas longas, abertura na frente com botões e de cor azul" class="produto__imagem">
+                        <h2 class="produto__titulo">College Atlética</h2>
+                        <h2 class="produto__cor">Azul</h2>
+                        <p class="produto__tamanho">(Unissex, Tamanhos Diversos)</p>
+                        <p class="produto__valor">Valor: R$150,00 em até 3x s/ juros</p>
+                    </section>
+                </div>
+                <p class="loja__descricao">Os produtos podem ser encomendados contatando a página da Atlética no Facebook, Instagram e nos grupos da Fatec ZL no WhatsApp. Fique ligado!</p>
+            </setion>
+        </main>
+        <!--Footer-->
+        <%- include('../partials/footer'); %>
+        <!--JS: Scripts (body)-->
+        <%- include('../partials/body-js'); %>
+    </body>
+</html>

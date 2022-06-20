@@ -1,0 +1,12 @@
+.logos__imagem {
+    width: 14%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px){
+    .logos__imagem {
+        width: 30%;
+        padding: 2em 0;
+    }
+    
+}

@@ -1,0 +1,23 @@
+.membro {
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .membro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: .5em;
+        font-size: 140%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .membro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: .5em;
+        font-size: 1.2em;
+    }
+}

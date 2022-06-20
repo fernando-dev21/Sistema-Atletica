@@ -1,0 +1,27 @@
+.menu__login {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 4%;
+}
+
+.login__entrar {
+    color: var(--branco-texto);
+    background-color: var(--vermelho-atletica);
+    border-color: white;
+    border-radius: 12px;
+    padding: 8px;
+}
+
+.login__cadastrar {
+    color: var(--branco-texto);
+    background-color: var(--vermelho-atletica);
+    border-color: white;
+    border-radius: 12px;
+    margin-left: 1%;
+    padding: 8px;
+}
+
+.login__entrar:hover, .login__cadastrar:hover {
+    background-color: white;
+    color: black;
+}

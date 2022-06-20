@@ -1,0 +1,65 @@
+:root {
+    --branco-medio: black;
+    --branco-texto: white;
+    --azul-link: yellow;
+    --vermelho-link: yellow;
+    --vermelho-atletica: black;
+    --titulo-h1: white;
+    --titulo-h2: white;
+    --fundo-quadro: yellow;
+    --vermelho-alerta: yellow;
+    --cinza-fundo:  black;
+    --preto-padrao: white;
+    --background: black;
+    --background-card: black;
+    --menu-cor: yellow;
+    --menu-hover: #fefefe;
+    --shadow: white;
+    --acessibilidade-links: yellow;
+    --titulo-modalidade: black;
+    --formulario-borda: white;
+    --formulario-botao:yellow;
+    --formulario-botao-texto: black;
+    --background-card-modalidade: white;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    color: white;
+    background-color: black;
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: left;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul, li {
+    padding: 0;
+}
+
+.banner__imagem, .logo-atletica, .noticia__imagem, .logos__imagem, .diretoria__imagem, .inscricoes__imagem, .galeria__imagem, .evento__imagem, .produto__imagem {
+    filter: grayscale(100%) contrast(120%);
+}
+
+.mapa__iframe {
+    filter: grayscale(70%) contrast(80%);
+}

@@ -1,0 +1,7 @@
+.produto {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    min-width: 250px;
+    align-items: center;
+}

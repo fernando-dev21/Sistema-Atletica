@@ -1,0 +1,14 @@
+.noticias {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 1050px;
+}
+
+@media screen and (max-width: 550px){
+    .noticias {
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
